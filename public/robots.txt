@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://heavyequip-pro.com/sitemap.xml
+
+# Block admin areas
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow specific API endpoints for public content
+Allow: /api/services
+Allow: /api/gallery
+Allow: /api/contact

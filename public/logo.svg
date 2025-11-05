@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="20" fill="#ea580c"/>
+  <path d="M40 100L60 80L60 120L40 100Z" fill="white"/>
+  <path d="M70 100L90 80L90 120L70 100Z" fill="white"/>
+  <path d="M100 100L130 70L130 130L100 100Z" fill="white"/>
+  <path d="M140 100L160 80L160 120L140 100Z" fill="white"/>
+  <text x="100" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">HeavyEquip Pro</text>
+</svg>
