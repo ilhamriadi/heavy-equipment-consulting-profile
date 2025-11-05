@@ -1,14 +1,24 @@
 flowchart TD
-  Start[Landing Page]
-  SignUpPage[Sign Up Page]
-  SignInPage[Sign In Page]
-  AuthAPI[Authentication API Endpoint]
-  DashboardPage[Dashboard Page]
-  Start -->|Select Sign Up| SignUpPage
-  Start -->|Select Sign In| SignInPage
-  SignUpPage -->|Submit Credentials| AuthAPI
-  SignInPage -->|Submit Credentials| AuthAPI
-  AuthAPI -->|Success| DashboardPage
-  AuthAPI -->|Error| SignUpPage
-  AuthAPI -->|Error| SignInPage
-  DashboardPage -->|Click Logout| Start
+    Visitor-->Home[Home Page]
+    Home-->About[About Section]
+    Home-->Services[Services Section]
+    Home-->Gallery[Gallery Section]
+    Home-->Contact[Contact Section]
+    Contact-->WhatsApp[Open WhatsApp Chat]
+    Visitor-->Admin[Admin Login]
+    Admin-->LoginForm[Login Form]
+    LoginForm-->Auth{Credentials Valid}
+    Auth--Yes-->Dashboard[CMS Dashboard]
+    Auth--No-->LoginForm
+    Dashboard-->ManageAbout[Edit About]
+    Dashboard-->ManageServices[Edit Services]
+    Dashboard-->ManageGallery[Edit Gallery]
+    Dashboard-->ManageContact[Edit Contact Form]
+    ManageAbout-->SaveAbout[Save Changes]
+    ManageServices-->SaveServices[Save Changes]
+    ManageGallery-->SaveGallery[Save Changes]
+    ManageContact-->SaveContact[Save Changes]
+    SaveAbout-->Dashboard
+    SaveServices-->Dashboard
+    SaveGallery-->Dashboard
+    SaveContact-->Dashboard
